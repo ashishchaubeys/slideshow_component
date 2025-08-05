@@ -3,7 +3,7 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
   <link rel="stylesheet" href="style.css">
-
+  <script src="script.js"></script>
 <div class="slider-bar">
   <!-- Column 1 -->
   <div class="column">
@@ -67,18 +67,3 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const commonOptions = {
-    direction: 'vertical',
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    allowTouchMove: false, // optional: disables manual swipe
-  };
-
-  new Swiper('.swiper-col-1', commonOptions);
-  new Swiper('.swiper-col-2', { ...commonOptions, autoplay: { delay: 3500 } });
-  new Swiper('.swiper-col-3', { ...commonOptions, autoplay: { delay: 4000 } });
-</script>
